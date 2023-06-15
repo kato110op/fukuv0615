@@ -4,7 +4,6 @@ namespace fukuv0615
     {
         int ans = rand.Next(101);
         int count = 0;
-        int a = 0;
         static Random rand = new Random();
         public Form1()
         {
@@ -14,7 +13,7 @@ namespace fukuv0615
         private void button1_Click(object sender, EventArgs e)
         {
             int guess;
-            guess= $"{TextBox}";
+            guess = $"{TextBox}";
             Text = $"{count}";
             count = (count) + 1;
             MessageBox.Show("{count}‰½‰ñ–Ú‚Ì’§í");
