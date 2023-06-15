@@ -12,14 +12,15 @@ namespace fukuv0615
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int guess;
-            guess = $"{TextBox}";
-            Text = $"{count}";
+            //int guess;
+            int guess = int.Parse(textBox1.Text);
             count = (count) + 1;
-            MessageBox.Show("{count}‰½‰ñ–Ú‚Ì’§í");
+            MessageBox.Show($"{count}‰½‰ñ–Ú‚Ì’§í");
             if (ans == guess)
             {
                 MessageBox.Show("Bingo");
+                count = 0;
+                ans = rand.Next(0, 101);
             }
             else if (ans < guess)
             {
